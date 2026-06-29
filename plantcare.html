@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantCare</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="plantcare.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="phone">
+
+    <!-- Top Bar -->
+    <div class="top">
+        <i class="fa-solid fa-arrow-left"></i>
+
+        <h2>Add New Plant</h2>
+
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Plant Image -->
+    <div class="plant-image">
+        <img src="aloevera.jpeg" alt="Plant">
+    </div>
+
+    <!-- Plant Name -->
+    <label>Plant Name</label>
+
+    <div class="input-box">
+        <input type="text" placeholder="Enter plant name">
+        <i class="fa-solid fa-leaf"></i>
+    </div>
+
+    <!-- Plant Type -->
+    <label>Plant Type</label>
+
+    <div class="input-box">
+        <select>
+            <option>Select type</option>
+            <option>Indoor</option>
+            <option>Outdoor</option>
+            <option>Flower</option>
+        </select>
+    </div>
+
+    <!-- Watering Frequency -->
+    <label>Watering Frequency</label>
+
+    <div class="input-box">
+        <select>
+            <option>Select frequency</option>
+            <option>Every Day</option>
+            <option>Every 3 Days</option>
+            <option>Every Week</option>
+        </select>
+    </div>
+
+    <!-- Upload Photo -->
+    <label>Add Photo</label>
+
+    <div class="photo-box">
+        <i class="fa-solid fa-camera"></i>
+        <i class="fa-solid fa-plus"></i>
+
+        <input type="file">
+    </div>
+
+    <!-- Save Button -->
+    <button onclick="savePlant()">
+        SAVE PLANT
+    </button>
+</div>
+<!-- Screen 2 : My Plants -->
+
+ <div class="phone">
+
+    <div class="top">
+        <i class="fa-solid fa-arrow-left"></i>
+        <h2>My Plants</h2>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search Plant">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div class="plant-card">
+
+        <img src="aloevera.jpeg" class="plant-img" width="100" height="100">
+
+        <div class="plant-details">
+            <h3>Aloe Vera</h3>
+            <p>💧 Water every 7 days</p>
+            <p>🌞 Indoor Plant</p>
+        </div>
+
+        <i class="fa-solid fa-ellipsis-vertical menu"></i>
+
+    </div>
+
+    <div class="plant-card">
+
+        <img src="moeny plant.jpeg" class="plant-img" width="100" height="100">
+
+        <div class="plant-details">
+            <h3>Money Plant</h3>
+            <p>💧 Water every 3 days</p>
+            <p>🌞 Indoor Plant</p>
+        </div>
+
+        <i class="fa-solid fa-ellipsis-vertical menu"></i>
+
+    </div>
+
+    <div class="plant-card">
+
+        <img src="snake plant.jpeg" class="plant-img" width="100" height="100">
+
+        <div class="plant-details">
+            <h3>Snake Plant</h3>
+            <p>💧 Water every 10 days</p>
+            <p>🌞 Indoor Plant</p>
+        </div>
+
+        <i class="fa-solid fa-ellipsis-vertical menu"></i>
+
+    </div>
+
+    <button class="add-btn">
+        + Add Plant
+    </button>
+
+</div>
+<!-- Screen 3 : Plant Reminder -->
+
+ <div class="phone">
+
+    <div class="top">
+        <i class="fa-solid fa-arrow-left"></i>
+        <h2>Plant Reminder</h2>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="reminder-img">
+        <img src="watering plant.jpeg" alt="Watering Plant">
+    </div>
+
+    <div class="reminder-card">
+
+        <h3>🌿 Aloe Vera</h3>
+
+        <p><b>Reminder:</b> Water Today</p>
+
+        <p><b>Time:</b> 07:00 AM</p>
+
+        <p><b>Frequency:</b> Every 7 Days</p>
+
+    </div>
+
+    <button onclick="MarkAsWatered()">Mark as watered</button>
+
+    <button onclick="snooze()">snooze (1 hour)</button>
+
+</div>
+
+<script src="plantcare.js"></script>
+
+</body>
+</html>
